@@ -13,4 +13,4 @@ app.use(express.static("public"))
 app.use("/api",apiRoutes)
 app.use("/", htmlRoutes)
 
-app.listen(3000, ()=>{console.log ("Server started")} )
+app.listen(5001, ()=>{console.log ("Server started")} )
