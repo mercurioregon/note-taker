@@ -1,7 +1,7 @@
 const express = require('express');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
-
+const port = process.env.PORT || 5001
 const fs = require ("fs")
 
 const path = require("path")
@@ -13,4 +13,4 @@ app.use(express.static("public"))
 app.use("/api",apiRoutes)
 app.use("/", htmlRoutes)
 
-app.listen(5001, ()=>{console.log ("Server started")} )
+app.listen(PORT, ()=>{console.log ("Server started")} )
